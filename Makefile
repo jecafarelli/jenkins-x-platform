@@ -1,7 +1,7 @@
 CHART_REPO := https://chartmuseum.jx.apikube.dsawsnprd.massmutual.com
 NAME := jenkins-x
 OS := $(shell uname)
-RELEASE_VERSION := 2.2.2-jessebuildv2
+RELEASE_VERSION := 2.2.2-jessebuildv3
 HELM := helm
 
 setup:
