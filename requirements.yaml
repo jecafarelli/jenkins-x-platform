@@ -1,8 +1,8 @@
 ---
 dependencies:
 - name: "jenkins"
-  repository: "http://chartmuseum.jenkins-x.io"
-  version: "0.10.32"
+  repository: "https://chartmuseum.jx.apikube.dsawsnprd.massmutual.com"
+  version: "0.10.30-jessrelease1"
   condition: "jenkins.enabled"
 - name: "exposecontroller"
   repository: "http://chartmuseum.jenkins-x.io"

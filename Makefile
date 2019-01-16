@@ -1,4 +1,4 @@
-CHART_REPO := http://jenkins-x-chartmuseum:8080
+CHART_REPO := https://chartmuseum.jx.apikube.dsawsnprd.massmutual.com
 NAME := jenkins-x
 OS := $(shell uname)
 RELEASE_VERSION := $(shell jx-release-version)
@@ -30,7 +30,7 @@ upgrade: clean setup build
 delete:
 	$(HELM) delete --purge $(NAME)
 
-clean: 
+clean:
 	rm -rf charts
 	rm -rf ${NAME}*.tgz
 	rm -rf requirements.lock
